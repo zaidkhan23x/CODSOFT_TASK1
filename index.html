@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohd Jaid — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- decorative orbit dot that follows scroll progress -->
+<div class="scroll-orbit" aria-hidden="true"><span id="orbitDot"></span></div>
+
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">Mohd jaid<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">// Hello, it's me</p>
+        <h1 class="hero-name">Mohd Jaid</h1>
+        <p class="hero-role">Frontend Developer</p>
+        <p class="hero-desc">
+          A passionate frontend developer with a builder's curiosity — no formal work
+          experience yet, plenty of shipped side-projects. Comfortable turning
+          designs into fast, responsive interfaces with HTML, CSS, JavaScript
+          & React.js.
+        </p>
+        <div class="hero-actions">
+          <a href="pdf/my new cv.pdf" download class="btn btn-primary" id="cvBtn">Download my CV</a>
+          <a href="#projects" class="btn btn-ghost">See my work &rarr;</a>
+        </div>
+        <div class="hero-stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="wedge" aria-hidden="true"></div>
+        <div class="portrait-ring">
+          <div class="portrait-frame">
+            <img src="images/profile.png" alt="my profile" />
+          </div>
+          <svg class="orbit-line" viewBox="0 0 400 400" aria-hidden="true">
+            <circle cx="200" cy="200" r="188" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <a href="#skills" class="scroll-cue" aria-label="Scroll to skills">
+      <span>Scroll</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 1v20M1 15l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="section-inner">
+      <p class="eyebrow center">// What I work with</p>
+      <h2 class="section-title center">Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill">
+          <div class="skill-head"><span>HTML</span><span class="skill-pct">70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="70" style="--pct:70%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>CSS</span><span class="skill-pct">60%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="60" style="--pct:60%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span class="skill-pct">50%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="50" style="--pct:50%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>React</span><span class="skill-pct">40%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="40" style="--pct:40%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>C++</span><span class="skill-pct">55%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="55" style="--pct:55%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>PHP</span><span class="skill-pct">47%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="47" style="--pct:47%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-inner">
+      <p class="eyebrow center">// A few things I've built</p>
+      <h2 class="section-title center">Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+         
+           <div class="project-thumb">
+           <img src="/images/osms_project.png" alt="osms project" >
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>OSMS Website</h3>
+              <span class="project-tag">Web</span>
+            </div>
+            <p>A responsive Online Service Management System built from scratch — streamlined service requests, 
+              user management, real-time status tracking, and an efficient admin dashboard..</p>
+            <div class="project-meta">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://zaidkhan23x.github.io/OSMS/" target="_blank" class="link-btn">Live demo</a>
+              <a href="#" class="link-btn link-btn-ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/bubble_game.png" alt="bubble_game">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Typing bubble game</h3>
+              <span class="project-tag">API</span>
+            </div>
+            <p>An interactive Typing Bubble Game built from scratch — test typing speed, pop bubbles with accurate keystrokes,
+               track your score, and improve your typing skills through engaging gameplay.</p>
+            <div class="project-meta">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://zaidkhan23x.github.io/Typing-Bubble-Game/" target="_blank" class="link-btn">Live demo</a>
+              <a href="#" class="link-btn link-btn-ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-inner about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">// Get to know me</p>
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm Mohd Jaid, a self‑taught frontend developer who enjoys turning ideas
+          into interfaces. I don't have formal work experience yet — what I do
+          have is a habit of building things end to end, breaking them, and
+          fixing them until they feel right.
+        </p>
+        <p>
+          Right now I'm sharpening my React fundamentals and learning to write
+          backend logic in PHP and C++, so I can eventually ship full projects
+          on my own, front to back.
+        </p>
+        <div class="about-facts">
+          <div><span class="fact-num">6+</span><span class="fact-label">Practice projects</span></div>
+          <div><span class="fact-num">6</span><span class="fact-label">Core tools</span></div>
+          <div><span class="fact-num">1</span><span class="fact-label">Goal: first internship</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Currently learning</h3>
+        <ul class="learn-list">
+          <li><span class="dot"></span>React component patterns &amp; hooks</li>
+          <li><span class="dot"></span>REST APIs with PHP</li>
+          <li><span class="dot"></span>Data structures in C++</li>
+          <li><span class="dot"></span>Responsive, accessible layouts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-inner">
+      <p class="eyebrow center">// Let's talk</p>
+      <h2 class="section-title center">Contact</h2>
+      <p class="contact-lede">Have a project, an internship opening, or just want
+        to say hi? My inbox is open.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me a little about it..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="contact-side">
+          <a class="contact-item" href="mailto:mohd.jaid@example.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">mohd.jaid@example.com</span>
+          </a>
+          <a class="contact-item" href="tel:+910000000000">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 00000 00000</span>
+          </a>
+          <div class="contact-socials">
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>&copy; <span id="year"></span> Mohd Jaid. Built with HTML, CSS &amp; JS.</span>
+    <a href="#home" class="back-top">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
