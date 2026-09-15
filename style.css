@@ -194,6 +194,11 @@ button{ font-family: inherit; }
   font-size: clamp(44px, 6.4vw, 76px);
   line-height: 1.02;
   margin: 6px 0 6px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 10ch;
+  /* animation: typing 4s steps(10) infinite, blink 0.75s step-end infinite; */
 }
 .hero-role{
   font-family: var(--font-mono);
@@ -352,8 +357,11 @@ button{ font-family: inherit; }
 .projects{ padding: 50px 0; }
 .projects-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 28px;
+  grid-auto-flow: column;
+  grid-auto-columns: 400px;
+  overflow-x: auto;
 }
 .project-card{
 background: var(--panel);
@@ -558,7 +566,7 @@ background: var(--panel);
   .wedge{ inset: -6% -6% -6% -6%; clip-path: circle(58% at 50% 50%); opacity: .5; }
 
   .skills-grid{ grid-template-columns: repeat(2, 1fr); }
-  .projects-grid{ grid-template-columns: repeat(2, 1fr); }
+  /* .projects-grid{ grid-template-columns: repeat(2, 1fr); } */
   .about-grid{ grid-template-columns: 1fr; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
@@ -585,11 +593,16 @@ background: var(--panel);
   .nav-toggle{ display: flex; }
 
   .skills-grid{ grid-template-columns: 1fr; }
-  .projects-grid{ grid-template-columns: 1fr; }
+  /* .projects-grid{ grid-template-columns: 1fr; } */
   .about-facts{ gap: 26px; }
 }
 
 @media (max-width: 480px){
+  .projects-grid{ 
+    /* grid-auto-flow: row;
+    overflow-x: visible; if we want non scrolling then remove comment*/ 
+    grid-auto-columns: 85%;
+}
   .section-inner{ padding: 0 20px; }
   .header-inner{ padding: 16px 20px; }
   .hero-inner{ padding: 0 20px; }
